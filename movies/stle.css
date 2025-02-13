@@ -1,0 +1,78 @@
+*{box-sizing:border-box;}
+ body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 50px;
+    padding: 10px;
+    background-color: beige;
+ }
+ .container{
+   background-color: cadetblue;
+   padding: 5px 20px 15px 20px;
+   border: 10px;
+   border-radius: 10px;
+ }
+ input[type="text"],
+ input[type="email"],
+ input[type="number"],
+ input[type="password"],
+ input[type="date"],
+ select,textarea,fieldset{
+   width: 100%;
+   padding: 10px;
+   border: 2px solid black;
+   border-radius: 10px;
+   margin: 10px;
+ }
+ fieldset{background-color: rgb(246, 246, 240);padding: 10px;
+margin: 10px;}
+.main_heading{text-align: center;}
+input[type="submit"]{
+   background-color: rgb(13, 171, 219);
+   padding: 10px;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   width: 100%;   
+}
+input[type="submit"]:hover{
+   background-color: aquamarine;
+
+}
+.sidebar,a{
+   display: block;
+   padding: 5px;
+   border: 2px solid black;border-color: black;
+   margin: 6px auto;background-color: aquamarine;
+}
+.main_content,p{
+   background-color: rgb(193, 12, 238);
+   margin: 10px auto;
+   padding: 10px;
+   border: 5px solid black;
+   box-sizing: content-box;
+}
+
+@media all and (min-width:1000px){
+   #sidebar,p,a::before,input[type="text"],
+   input[type="email"],
+   input[type="number"],
+   input[type="password"],
+   input[type="date"],
+   select,textarea,fieldset{
+     width: 100%;
+     padding: 10px;
+     border: 2px solid black;
+     border-radius: 10px;
+     margin: 10px;{content:"email:";
+   }
+}
+}
+@media all and (max-width:999px)and (min-width:600px) {
+     #sidebar,p,a::after{
+      content: "("attr(data-email)")";
+      color: #000;
+     }
+   
+}
+
+

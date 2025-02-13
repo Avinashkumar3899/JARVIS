@@ -1,0 +1,97 @@
+*{box-sizing:border-box;}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+header {
+    padding: 30px;
+    background-color: rgb(31, 135, 135);
+}
+
+nav {
+    background-color: #333;
+    overflow:hidden;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
+    font: optional;
+}
+
+section:nth-child(odd) {
+    background-color: rgba(136, 175, 10, 0.518);
+}
+
+section{
+    min-height: 75vh;
+}
+
+video {
+    padding: 5px;
+    background-color: #333;
+}
+
+iframe {
+    height: 75vh;
+}
+
+img {
+    padding: 5px;
+    background-color: black;
+    object-fit: cover;
+    
+}
+
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+a:hover{color: chocolate;
+background-color: cyan;}
+
+table,tr,th,td{padding: 50px;border: 6px solid black;margin: 50px; border-collapse: collapse;border-spacing: 500px;}
+th{background-color: aqua;}
+td{background-color: burlywood;}
+
+@media all and (max-width: 600px) {
+     #vid, header h1, nav,nav a, section{
+        width: auto;
+        padding: 3%;
+
+
+    }
+
+    
+}
